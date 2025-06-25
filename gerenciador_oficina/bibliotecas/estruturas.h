@@ -57,7 +57,7 @@ void impressaoDadosCliente();
 void impressaoDadosCarro();
 void impressaoDadosOS();
 void impressaoDadosPecas();
-int Menusistema();
+int MenuSistema();
 void arquivoCadastroClientes();
 void ArquivoCadastroCarros();
 void ArquivoCadastroOS();
