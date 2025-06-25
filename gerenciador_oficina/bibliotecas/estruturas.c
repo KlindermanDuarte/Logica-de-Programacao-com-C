@@ -235,11 +235,11 @@ void CadastrarClientes(){
         cadastroCliente[contador].estadoCivil[strcspn(cadastroCliente[contador].estadoCivil, "\n")] = 0;
 
         printf("Digite o CPF: ");
-        scanf("%s", &cadastroCliente[contador].cpf);
+        scanf("%s", cadastroCliente[contador].cpf);
         while (getchar() != '\n' && getchar() != EOF);
 
         printf("Digite o telefone para contato: ");
-        scanf("%s", &cadastroCliente[contador].telefone);
+        scanf("%s", cadastroCliente[contador].telefone);
         while (getchar() != '\n' && getchar() != EOF);
 
         printf("\n");
@@ -273,7 +273,7 @@ void CadastrarVeiculo(){
     {   
         printf("DADOS DO %iº CARRO\n", contador + 1);
         printf("Digite a placa do carro: ");
-        scanf("%s", &carros[contador].placa);
+        scanf("%s", carros[contador].placa);
         while (getchar() != '\n' && getchar() != EOF);
 
         printf("Digite o nome da marca: ");
@@ -341,19 +341,19 @@ void AbrirOS(){
     {
         printf("DADOS DA %iª OS\n", contador + 1);
         printf("Digite a OS desejada: ");
-        scanf("%s", &ordServico[contador].numeroOS);
+        scanf("%s", ordServico[contador].numeroOS);
 
         printf("Digite a data de abertura da OS: ");
-        scanf("%s", &ordServico[contador].dataAbertura);
+        scanf("%s", ordServico[contador].dataAbertura);
 
         printf("Digite o status da OS: ");
-        scanf("%s", &ordServico[contador].status);
+        scanf("%s", ordServico[contador].status);
 
         printf("Digite o CPF do cliente: ");
-        scanf("%s", &ordServico[contador].cpfCliente);
+        scanf("%s", ordServico[contador].cpfCliente);
 
         printf("Nos informe a placa do veículo: ");
-        scanf("%s", &ordServico[contador].placaVeiculo);
+        scanf("%s", ordServico[contador].placaVeiculo);
 
         printf("Quilometragem: ");
         scanf("%i", &ordServico[contador].quilometragem);       
@@ -395,17 +395,17 @@ void CadastrarPecas(){
     {
         printf("DADOS DA %iª PEÇA\n", contador + 1);
         printf("Digite o código da peça: ");
-        scanf("%s", &pecas[contador].codigo);
+        scanf("%s", pecas[contador].codigo);
 
         printf("Nos informe a marca da peça: ");
-        scanf("%s", &pecas[contador].marcaFabricante);
+        scanf("%s", pecas[contador].marcaFabricante);
         while (getchar() != '\n' && getchar() != EOF);
 
         printf("Nos dê uma breve descrição da peça: ");
         fgets(pecas[contador].descricao,sizeof(pecas[contador].descricao),stdin);
 
         printf("Quais carros essa peça é compatível?\n");
-        scanf("%s", &pecas[contador].aplicacao);
+        scanf("%s", pecas[contador].aplicacao);
         while (getchar() != '\n' && getchar() != EOF);
 
         printf("Nos informe o preço de custo: ");
