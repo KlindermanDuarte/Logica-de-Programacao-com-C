@@ -97,7 +97,7 @@ int MenuSistema () {
 
 
 void ArquivoCadastroClientes(){
-    ArqCadastroClientes = fopen("CLIENTES.txt","w+");
+    ArqCadastroClientes = fopen("./ArquivosTXT/CLIENTES.txt","w+");
     if (ArqCadastroClientes == NULL){
         printf("Erro ao gerar o arquivo de cadastro de clientes. Verifique o caminho do arquivo!\n");
     }
@@ -108,7 +108,7 @@ void ArquivoCadastroClientes(){
 }
 
 void ArquivoCadastroCarros(){
-    ArqCadastroCarro = fopen("CARROS.txt","w+");
+    ArqCadastroCarro = fopen("./ArquivosTXT/CARROS.txt","w+");
     if (ArqCadastroCarro == NULL)
     {
         printf("Erro ao gerar o arquivo de cadastro de carros. Verifique o caminho do arquivo!\n");
@@ -120,7 +120,7 @@ void ArquivoCadastroCarros(){
 }
 
 void ArquivoCadastroOS(){
-    ArqCadastroOS = fopen("ORDEM_SERVICO.txt","w+");
+    ArqCadastroOS = fopen("./ArquivosTXT/ORDEM_SERVICO.txt","w+");
     if (ArqCadastroOS == NULL)
     {
         printf("Erro ao gerar o arquivo de cadastro de OS. Verifique o caminho do arquivo!\n");
@@ -132,7 +132,7 @@ void ArquivoCadastroOS(){
 }
 
 void ArquivoCadastroPecas(){
-    ArqCadastroPecas = fopen("PEÇAS.txt","w+");
+    ArqCadastroPecas = fopen("./ArquivosTXT/PEÇAS.txt","w+");
     if (ArqCadastroPecas == NULL)
     {
         printf("Erro ao gerar o arquivo de cadastro de peças. Verifique o caminho do arquivo!\n");
